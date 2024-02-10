@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohit Singh Bisht Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+<div id="name"><p>Mohit</p> $ <p>Bisht</p>.</div>
+<div id="home"><p>Home</p></div>
+<div id="about"><p>About</p></div>
+<div id="project"><p>Projects</p></div>
+<!-- <div id="portfolio"><p>Portfolio</p></div> -->
+<div id="contact"><p>Contact</p></div>
+    </header>
+
+<div class="section1">
+    <div id="details">
+        <div id="profession"><p>Student</p></div>
+        <div id="msb"><p>Hi, I'm <span>MOHIT </span>SINGH BISHT</p>
+        </div>
+    </div>
+    <div id="image-div">
+    <img src="./images/profile.webp" alt="mohit profile photo">
+    </div>
+</div>
+
+<div class="section2">
+<div id="profile-div">
+<img src="./images/IMG20240130133325-_1_.webp" alt=" profile-image2">
+</div>
+<div id="about-div">
+    <h2>About Me</h2>
+    <div id="description"><p>I'm born in Amritsar and currently living in Haldwani. 
+        I'm currently pursuing BCA from Graphic Era Hill University.
+     My current goal is to secure a job in well knowned company because
+      I believe that it will help me gain experience and it will enhance my knowledge. 
+    In the future, I look forward to using my knowledge & enhancing 
+    my leadership skills to solve real-world problems.</p></div>
+        <div class="skill-education-div"> <!--it will be flex-->
+            <div id="skill-div"> <!--flex:1-  and js will apply-->
+                <h3 class="skill">Skills </h3>
+               <h3 class="education">Education</h3>
+               <div id="skill-detail">
+                <ul>
+                    <li>C, C++ Programming</li>
+                    <li>Core Java</li>
+                    <li>MySql</li>
+                    <li>Frontend Development</li>
+                </ul>
+
+            </div>
+        </div>
+            <!---Skill end-->
+            <div id="education-div"> <!--flex:1-  and js will apply -->
+                 <div id="education-detail">
+                <p1>Kendriya Vidyalaya<br>2021<br></p1>
+                <p2>Graphic Era Hill University<br>2022-2025</p2>
+            </div>
+        </div>
+            <!---education end-->
+        </div>
+        <!---skill-eduction-div end-->
+    </div>
+    <!---about-div end-->
+</div>
+
+<!---Section 2 end-->
+
+<div class="section3">
+    <h1>My Work</h1>
+<div id="project1">
+    <a href="https://mohitsinghbisht2003.github.io/Food-Ordering/" target="_blank">
+        <img src="./images/project-picture.webp" alt="project1">
+    </a>
+    <div id="about-project">
+        <h4>Food Ordering Website</h4>
+        <p><br>It is a prototype of My college Group Project which is QR- Based Food ordering website in which you can order your food from your seat by scanning our QR-code</p>
+    </div>
+</div>
+
+
+<div id="project2">
+    Currently Unavailable for Mobile Screen
+    <!-- <a href="https://mohitsinghbisht2003.github.io/Food-Ordering/" target="_blank">
+        <img src="project picture.jpg">
+    </a> -->
+    <div id="about-project">
+        <h4>Spotify Clone</h4>
+        <p><br></p>
+    </div>
+</div>
+
+<div id="project3">
+    Currently Unavailable for Mobile Screen
+    <!-- <a href="https://mohitsinghbisht2003.github.io/Food-Ordering/" target="_blank">
+        <img src="project picture.jpg">
+    </a> -->
+    <div id="about-project">
+        <h4>Restaurant Food Showcase</h4>
+    </div>
+</div>
+
+<div id="project4">
+    Currently Unavailable for Mobile Screen
+    <!-- <a href="https://mohitsinghbisht2003.github.io/Food-Ordering/" target="_blank">
+        <img src="project picture.jpg">
+    </a> -->
+    <div id="about-project">
+        <h4>Parallax Website</h4>
+    </div>
+</div>
+</div>
+
+<div class="footer">
+    <div id="contact me"><h1>Contact Me</h1></div>
+    <img id="mail-logo" src="./icons/gmail.webp" alt="mail-logo"> 
+    <a href="mohitbisht865@gmail.com"><div id="mail">mohitbisht865@gmail.com</div></a>
+
+    <div class="socialmedia">
+            
+                <div  id="insta"><a href="https://www.instagram.com/bishtmohit03/" target="_blank"><img src="./icons/insta.webp" alt="insta-icon"> </a></div>
+            
+
+           
+                <div  id="twiter"><a href="https://twitter.com/MohitBi54863590" target="_blank"><img src="./icons/follow-logo.webp" alt="twitter-icon"></a></div>
+        
+
+            
+                <div id="linkedin"><a href="https://www.linkedin.com/in/mohitsinghbisht/" target="_blank"><img  src="./icons/linkedin.webp" alt="linkedin-icon"></a></div>
+        
+    </div>
+    
+    <a href="My resume.pdf" download>
+        <button id="download">
+         Download
+        </button>
+       </a>
+
+<input id="yourname" type="text" placeholder="Your Name">
+<input id="email" type="text" placeholder="Your Email">
+<input id="message" type="text" placeholder="Your Message">
+
+<button id="submit">Submit</button>
+
+</div>
+
+<div class="copyright">
+    Copyright @ Mohit Singh Bisht Portfolio
+</div>
+
+
+
+<script>
+   let skill=document.querySelector(".skill");
+   let education=document.querySelector(".education");
+   let skilldetail=document.querySelector("#skill-detail");
+   let educationdetail=document.querySelector("#education-detail");
+   let click1=0;
+   skill.onclick=()=>{
+    skilldetail.style.opacity="1";
+    skill.style.textDecoration="underline";
+    education.style.textDecoration="none";
+    educationdetail.style.opacity="0";
+   };
+
+   education.onclick=()=>{
+    skilldetail.style.opacity="0";
+    skill.style.textDecoration="none";
+    education.style.textDecoration="underline";
+    educationdetail.style.opacity="1";
+   };
+</script>
+</body>
+</html>
